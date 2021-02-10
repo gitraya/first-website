@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body header #navigation {
+    background-color: rgb(0, 137, 196);
+}
+
+#container {
+    width: 100%;
+    height: 58px;
+}
+
+.charcontainer {
+    width: 85%;
+    margin: 15px auto;
+    background-color: rgb(219, 245, 253);
+    box-shadow: 0 0 3px 3px rgba(71, 71, 71, 0.4);
+    border-radius: 5px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.charcontainer li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+.charcontainer a span {
+    color: rgb(219, 245, 253);
+    text-shadow: 1px -1px 1px rgb(59, 59, 59);
+    font-family: 'baloo_chettan_2regular';
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height: 120px;
+    background-color: rgba(71, 71, 71, 0.8);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: 0.7s;
+    opacity: 0;
+}
+
+.charcontainer li .endspan {
+    right: 20px;
+}
+
+.charcontainer li a:hover span {
+    opacity: 1;
+}
+
+.charcontainer .imgchar {
+    margin-left: 20px;
+}
+
+.charcontainer .imgchara {
+    margin-right: 20px;
+}
+
+.char-image {
+    margin: 15px 10px 10px 10px;
+}
+
+.char-image, .charcontainer a span {
+    filter: contrast(120%);
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 0.5px solid rgb(138, 165, 177);
+}
+
+.center {
+    text-align: center;
+}
+
+#myGallery .prev, #myGallery .next {
+    background-color: #f1f1f1;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    position: absolute;
+    opacity: .6;
+}
+ 
+.next {
+    top: 50%;
+    right: 23%;
+}
+
+.prev {
+    top: 50%;
+    left: 23%;
+}
+
+#myGallery .prev:hover, #myGallery .next:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#myGallery .round {
+    border-radius: 50%;
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.6;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 10px;
+    content: ' ';
+    height: 33px;
+    width: 6px;
+    border-radius: 5px;
+    background-color: rgb(228, 227, 227);
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9;
+    text-align: center;
+    padding: 130px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.overlay img, .overlay .quote {
+    max-width: 70%;
+    max-height: 100%;
+    box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+}
+
+.overlay div .quote {
+    box-shadow: none;
+}
+
+.overlay .quote {
+    font-family: 'baloo_bhai2_bold';
+    color: rgb(219, 245, 253);
+    text-shadow: 2px -2px 1px rgb(0, 0, 0);
+}

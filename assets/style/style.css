@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(10, 10, 10);
+    font: 18px 'baloo_chettan_2regular';
+    margin: 0 auto;
+}
+
+#background {
+    width: 100%;
+    height: 708px;
+    background-image: url('../image/home/backgroundcity.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 5px 5px rgba(18, 19, 20, 0.8);
+    background-color: rgba(0, 137, 196, 0.9); 
+    z-index: 3;   
+}
+
+#navigation a, .mebutton {
+    font: 25px 'ubuntubold';
+    color: rgba(250, 235, 215, 0.836);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.menu {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.mebutton, .home {
+    margin: auto 10px;
+}
+
+.menu li, .bttnfather {
+    float: left;
+}
+
+.menu .home, .bttnmother {
+    float: right;
+}
+
+.menu li a:hover {
+    background-color: rgb(11, 116, 161);
+    box-shadow: inset 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropchild {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 137, 196, 0.9); 
+    width: 100%;
+    box-shadow: inset 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropchild a {
+    padding: 12px 16px;
+    display: block;
+}
+
+.social .unlist {
+    display: inline-block;
+}
+
+#background #headcontent {
+    font: 22px 'baloo_bhai2_bold';
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    padding: 140px 20px;
+    color: antiquewhite;
+    text-shadow: 0 1.5px 3px rgba(0, 158, 226, 0.8);;
+}
+
+#background #headcontent .who {
+    font-size: 18px;
+    text-align: justify;
+    padding: 80px 20px;
+}
+
+.headpraf {
+    font-family: 'baloo_bhai2_bold';
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+.link {
+    font-style: italic;
+}
+
+.link:hover {
+    color: rgb(11, 116, 161);
+}
+
+.written {
+    color: rgb(5, 5, 5);
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.profile-image {
+    width: 35%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+.paragraph {
+    text-align: justify;
+}
+
+.bold {
+    font-family: 'baloo_bhai2_bold';
+}
+
+.feature-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hrline {
+    border-top: 2px solid rgb(0, 158, 226);
+    border-radius: 2px;
+}
+
+#hometown-button {
+    padding: 25px 10px 15px;
+    overflow: hidden;
+    width: 75%;
+    margin: auto;
+}
+
+.hometown-content {
+    position: relative;
+    height: 90px;
+}
+
+.bttnfather, .bttnmother {
+    font-family: 'ubuntubold';
+    color: rgb(0, 79, 105);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(223, 247, 255);
+    box-shadow: 0px 0px 2px 2.5px rgba(0, 70, 94, 0.822);
+    cursor: pointer;
+}
+
+.bttnfather:hover, .bttnmother:hover {
+    box-shadow: 0px 0px 1.5px 1.25px rgba(0, 70, 94, 0.822);
+    text-shadow: .3px .4px 1px rgb(0, 79, 105);
+}
+
+main {
+    width: 100%;
+    padding: 10px 10px 40px 10px;
+    background-color: rgb(0, 79, 105);
+    box-shadow: 0 -1px 8px rgb(0, 79, 105);
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    overflow: auto;
+    width: 75%;
+    padding: 10px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+
+#asidelist {
+    margin-top: 20px;
+    padding: 1px 1px 10px 1px;
+    height: 100%;
+    background-color: rgb(223, 247, 255);
+    border-bottom: 3px solid rgba(77, 74, 71, 0.37);
+    border-right: 3px solid rgba(77, 74, 71, 0.37);
+    border-left: 3px solid rgba(77, 74, 71, 0.37);
+    border-radius: 5px;
+    box-shadow: 0 -4px 9px rgba(153, 142, 153, 0.356);
+}
+
+.card {
+    color: rgb(0, 79, 105);
+    padding: 18px;
+    margin-top: 20px;
+    background-color: rgb(223, 247, 255);
+    box-shadow: 0 6px 9px 0 rgba(129, 121, 129, 0.58);
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.cardside {
+    color: rgb(0, 79, 105);
+    padding: 18px;
+    margin: 20px 5px 0 5px;
+    background-color: rgb(223, 247, 255);
+    box-shadow: inset 0 -2px 4px 0 rgba(129, 121, 129, 0.58);
+    border-radius: 5px;
+}
+
+#info, .righttd, .lefttd {
+    margin: auto;
+}
+
+.righttd {
+    text-align: right;
+    padding-right: 8px;
+}
+
+.lefttd {
+    text-align: left;
+    padding-left: 8px;
+}
+
+.imgsocial {
+    padding: 0;
+    width: 30px;
+    transition: 1s;
+}
+
+.imgsocial:hover {
+    transform: scale(1.2);
+}
+
+#footcontainer .follow, #footcontainer .social, #footcontainer .copyright {
+    padding: 5px;
+}
+
+#footcontainer .social .imgsocial {
+    padding: 0 2px 0 2px;
+    margin-bottom: -10px;
+}
+
+.follow {
+    margin-bottom: -10px;
+}
+
+.myaccount li {
+    list-style: none;
+}
+
+#footcontainer {
+    text-align: center;
+    font-family: 'baloo_bhai2_bold';
+    color: rgb(0, 79, 105);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);   
+    background-color: rgb(223, 247, 255); 
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 137, 196);
+    border-radius: 6px;
+}
+
+@font-face {
+    font-family: 'ubuntubold';
+    src: url(../font/ubuntu-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'baloo_chettan_2regular';
+    src: url(../font/baloochettan2-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'baloo_bhai2_bold';
+    src: url(../font/BalooBhai2-Bold.ttf) format('truetype');
+}
+
+@media screen and (max-width: 600px) {
+    #hometown-button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bttnfather {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #navigation, #content,
+    aside, .myaccount, .copyright {
+        width: 100%;
+    }
+}
